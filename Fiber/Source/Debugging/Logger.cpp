@@ -18,13 +18,7 @@ static void _set_console_color(int foreground_color, int background_color)
 	SetConsoleTextAttribute(hConsole, color);
 }
 
-void init_console()
-{
-	SetConsoleTitle(TEXT("Debug Console"));
-	log_message(Good, "Console Initilized");
-}
-
-void FIBER_API log_message(LogLayer log_layer, const char* message, ...)
+void log_message(LogLayer log_layer, const char* message, ...)
 {
 	va_list args;
 	va_start(args, message);

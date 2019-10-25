@@ -2,7 +2,6 @@
 
 int main(int argc, char* argv[])
 {
-	init_console();
-	log_message(Good, "Eyy");
+	run("Yeet", 800, 600, 0);
 	return 0;
 }
